@@ -1,0 +1,196 @@
+/* Utility Classes */
+
+/* ========================================
+   SPACING UTILITIES
+   ======================================== */
+
+/* Margin */
+.u-mt-xs { margin-top: var(--space-xs); }
+.u-mt-sm { margin-top: var(--space-sm); }
+.u-mt-md { margin-top: var(--space-md); }
+.u-mt-lg { margin-top: var(--space-lg); }
+.u-mt-xl { margin-top: var(--space-xl); }
+.u-mt-2xl { margin-top: var(--space-2xl); }
+
+.u-mb-xs { margin-bottom: var(--space-xs); }
+.u-mb-sm { margin-bottom: var(--space-sm); }
+.u-mb-md { margin-bottom: var(--space-md); }
+.u-mb-lg { margin-bottom: var(--space-lg); }
+.u-mb-xl { margin-bottom: var(--space-xl); }
+.u-mb-2xl { margin-bottom: var(--space-2xl); }
+
+.u-ml-xs { margin-left: var(--space-xs); }
+.u-ml-sm { margin-left: var(--space-sm); }
+.u-ml-md { margin-left: var(--space-md); }
+.u-ml-lg { margin-left: var(--space-lg); }
+
+.u-mr-xs { margin-right: var(--space-xs); }
+.u-mr-sm { margin-right: var(--space-sm); }
+.u-mr-md { margin-right: var(--space-md); }
+.u-mr-lg { margin-right: var(--space-lg); }
+
+/* Padding */
+.u-pt-xs { padding-top: var(--space-xs); }
+.u-pt-sm { padding-top: var(--space-sm); }
+.u-pt-md { padding-top: var(--space-md); }
+.u-pt-lg { padding-top: var(--space-lg); }
+.u-pt-xl { padding-top: var(--space-xl); }
+.u-pt-2xl { padding-top: var(--space-2xl); }
+
+.u-pb-xs { padding-bottom: var(--space-xs); }
+.u-pb-sm { padding-bottom: var(--space-sm); }
+.u-pb-md { padding-bottom: var(--space-md); }
+.u-pb-lg { padding-bottom: var(--space-lg); }
+.u-pb-xl { padding-bottom: var(--space-xl); }
+.u-pb-2xl { padding-bottom: var(--space-2xl); }
+
+/* ========================================
+   TEXT ALIGNMENT
+   ======================================== */
+
+.u-text-left { text-align: left; }
+.u-text-center { text-align: center; }
+.u-text-right { text-align: right; }
+
+/* ========================================
+   DISPLAY UTILITIES
+   ======================================== */
+
+.u-block { display: block; }
+.u-inline-block { display: inline-block; }
+.u-inline { display: inline; }
+.u-flex { display: flex; }
+.u-grid { display: grid; }
+.u-hidden { display: none; }
+
+/* ========================================
+   VISIBILITY (Responsive)
+   ======================================== */
+
+/* Hide on mobile */
+@media (max-width: 767px) {
+  .u-hide-mobile {
+    display: none !important;
+  }
+}
+
+/* Hide on tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .u-hide-tablet {
+    display: none !important;
+  }
+}
+
+/* Hide on desktop */
+@media (min-width: 1024px) {
+  .u-hide-desktop {
+    display: none !important;
+  }
+}
+
+/* Show only on mobile */
+@media (min-width: 768px) {
+  .u-show-mobile-only {
+    display: none !important;
+  }
+}
+
+/* ========================================
+   WIDTH UTILITIES
+   ======================================== */
+
+.u-full-width { width: 100%; }
+.u-auto-width { width: auto; }
+
+/* ========================================
+   POSITION UTILITIES
+   ======================================== */
+
+.u-relative { position: relative; }
+.u-absolute { position: absolute; }
+.u-fixed { position: fixed; }
+.u-sticky { position: sticky; }
+
+/* ========================================
+   OVERFLOW UTILITIES
+   ======================================== */
+
+.u-overflow-hidden { overflow: hidden; }
+.u-overflow-auto { overflow: auto; }
+.u-overflow-scroll { overflow: scroll; }
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+/* Screen reader only - visually hidden but accessible */
+.u-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Skip to content link */
+.u-skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-text);
+  color: var(--color-bg);
+  padding: var(--space-sm) var(--space-md);
+  text-decoration: none;
+  z-index: var(--z-tooltip);
+}
+
+.u-skip-link:focus {
+  top: 0;
+}
+
+/* ========================================
+   BORDER UTILITIES
+   ======================================== */
+
+.u-border { border: var(--border-width) solid var(--color-border); }
+.u-border-top { border-top: var(--border-width) solid var(--color-border); }
+.u-border-bottom { border-bottom: var(--border-width) solid var(--color-border); }
+.u-border-left { border-left: var(--border-width) solid var(--color-border); }
+.u-border-right { border-right: var(--border-width) solid var(--color-border); }
+.u-border-none { border: none; }
+
+/* ========================================
+   BACKGROUND UTILITIES
+   ======================================== */
+
+.u-bg-transparent { background: transparent; }
+.u-bg-text { background: var(--color-text); }
+.u-bg-white { background: var(--color-bg); }
+
+/* ========================================
+   COLOR UTILITIES
+   ======================================== */
+
+.u-color-text { color: var(--color-text); }
+.u-color-muted { color: var(--color-muted); }
+.u-color-accent { color: var(--color-accent); }
+.u-color-bg { color: var(--color-bg); }
+
+/* ========================================
+   INTERACTION STATES
+   ======================================== */
+
+.u-pointer { cursor: pointer; }
+.u-not-allowed { cursor: not-allowed; }
+
+/* ========================================
+   TRANSITIONS
+   ======================================== */
+
+.u-transition-fast { transition: all var(--transition-fast); }
+.u-transition-base { transition: all var(--transition-base); }
+.u-transition-slow { transition: all var(--transition-slow); }

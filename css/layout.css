@@ -1,0 +1,199 @@
+/* Layout Styles - Grid, Flexbox, Containers */
+
+/* ========================================
+   CONTAINER
+   ======================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+/* Full-width container */
+.container--full {
+  max-width: 100%;
+}
+
+/* Narrow container */
+.container--narrow {
+  max-width: 800px;
+}
+
+/* ========================================
+   GRID SYSTEM
+   ======================================== */
+
+.grid {
+  display: grid;
+  gap: var(--grid-gap);
+}
+
+/* Grid with small gap */
+.grid--sm {
+  gap: var(--grid-gap-sm);
+}
+
+/* Auto-fit grid - responsive without media queries */
+.grid--auto {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Specific column counts */
+.grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Mobile: Always single column */
+@media (max-width: 767px) {
+  .grid--2,
+  .grid--3,
+  .grid--4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet: 2 columns for larger grids */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid--3,
+  .grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========================================
+   FLEXBOX UTILITIES
+   ======================================== */
+
+.flex {
+  display: flex;
+}
+
+.flex--center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex--between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.flex--wrap {
+  flex-wrap: wrap;
+}
+
+.flex--gap {
+  gap: var(--space-md);
+}
+
+.flex--gap-sm {
+  gap: var(--space-sm);
+}
+
+/* ========================================
+   SECTION SPACING
+   ======================================== */
+
+.section {
+  padding-top: var(--space-2xl);
+  padding-bottom: var(--space-2xl);
+}
+
+.section--lg {
+  padding-top: var(--space-3xl);
+  padding-bottom: var(--space-3xl);
+}
+
+.section--sm {
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xl);
+}
+
+/* ========================================
+   HEADER & FOOTER LAYOUT
+   ======================================== */
+
+.header {
+  border-bottom: var(--border-width) solid var(--color-border);
+  padding: var(--space-lg) 0;
+}
+
+.header__container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  border-top: var(--border-width) solid var(--color-border);
+  padding: var(--space-lg) 0;
+  margin-top: var(--space-xl);
+}
+
+.footer__container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  text-align: center;
+}
+
+/* ========================================
+   MAIN CONTENT AREA
+   ======================================== */
+
+main {
+  min-height: 60vh;
+  padding-top: var(--space-2xl);
+  padding-bottom: var(--space-2xl);
+}
+
+/* ========================================
+   RESPONSIVE ADJUSTMENTS
+   ======================================== */
+
+@media (max-width: 767px) {
+  .container {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+
+  .section {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+  }
+
+  main {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+  }
+
+  .header {
+    padding: var(--space-md) 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding-top: var(--space-3xl);
+    padding-bottom: var(--space-3xl);
+  }
+}

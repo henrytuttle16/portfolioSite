@@ -1,0 +1,119 @@
+{
+  "site": {
+    "name": "Your Name",
+    "title": "Filmmaker & Strategist",
+    "description": "A curated archive of films and strategic work"
+  },
+  "films": [
+    {
+      "id": 1,
+      "title": "Film Title One",
+      "year": 2024,
+      "duration": "5:30",
+      "platform": "vimeo",
+      "videoId": "123456789",
+      "thumbnail": "/assets/images/film-1-thumb.jpg",
+      "description": "A brief description of your first film. What's the story about? What themes does it explore?"
+    },
+    {
+      "id": 2,
+      "title": "Film Title Two",
+      "year": 2023,
+      "duration": "8:15",
+      "platform": "youtube",
+      "videoId": "dQw4w9WgXcQ",
+      "thumbnail": "/assets/images/film-2-thumb.jpg",
+      "description": "Description of your second film project."
+    },
+    {
+      "id": 3,
+      "title": "Film Title Three",
+      "year": 2023,
+      "duration": "6:45",
+      "platform": "vimeo",
+      "videoId": "987654321",
+      "thumbnail": "/assets/images/film-3-thumb.jpg",
+      "description": "Description of your third film."
+    },
+    {
+      "id": 4,
+      "title": "Film Title Four",
+      "year": 2022,
+      "duration": "4:20",
+      "platform": "vimeo",
+      "videoId": "456789123",
+      "thumbnail": "/assets/images/film-4-thumb.jpg",
+      "description": "Description of your fourth film."
+    },
+    {
+      "id": 5,
+      "title": "Film Title Five",
+      "year": 2022,
+      "duration": "7:00",
+      "platform": "youtube",
+      "videoId": "another_id",
+      "thumbnail": "/assets/images/film-5-thumb.jpg",
+      "description": "Description of your fifth film."
+    },
+    {
+      "id": 6,
+      "title": "Film Title Six",
+      "year": 2021,
+      "duration": "5:15",
+      "platform": "vimeo",
+      "videoId": "111222333",
+      "thumbnail": "/assets/images/film-6-thumb.jpg",
+      "description": "Description of your sixth film."
+    },
+    {
+      "id": 7,
+      "title": "Film Title Seven",
+      "year": 2021,
+      "duration": "9:30",
+      "platform": "vimeo",
+      "videoId": "444555666",
+      "thumbnail": "/assets/images/film-7-thumb.jpg",
+      "description": "Description of your seventh film."
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Product Strategy Project",
+      "role": "Product Manager",
+      "date": "2023-2024",
+      "description": "Led product strategy for a university initiative, conducting user research with 200+ students and faculty. Developed roadmap that increased engagement by 40%.",
+      "tags": ["Strategy", "Product Management", "Research"]
+    },
+    {
+      "id": 2,
+      "title": "Business Model Innovation",
+      "role": "Strategy Consultant",
+      "date": "2023",
+      "description": "Analyzed market opportunities and developed go-to-market strategy for an ed-tech startup. Presented recommendations to executive team.",
+      "tags": ["Business Strategy", "Market Analysis", "Consulting"]
+    },
+    {
+      "id": 3,
+      "title": "Data-Driven Campaign Analysis",
+      "role": "Analyst",
+      "date": "2022-2023",
+      "description": "Evaluated marketing campaign performance across 5 channels using SQL and Python. Identified optimization opportunities that reduced CAC by 25%.",
+      "tags": ["Data Analysis", "Marketing", "SQL"]
+    },
+    {
+      "id": 4,
+      "title": "UX Research & Design Sprint",
+      "role": "UX Researcher",
+      "date": "2022",
+      "description": "Conducted usability testing and synthesized findings into actionable design recommendations. Collaborated with designers to iterate on prototypes.",
+      "tags": ["UX Research", "Design Thinking", "User Testing"]
+    }
+  ],
+  "contact": {
+    "email": "your.email@example.com",
+    "linkedin": "https://linkedin.com/in/yourprofile",
+    "github": "https://github.com/yourusername",
+    "resume": "/assets/resume.pdf"
+  }
+}

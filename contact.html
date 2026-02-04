@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with me!">
+  <title>Contact - Henry</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/utilities.css">
+</head>
+<body>
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="header__container">
+      <a href="index.html" class="header__logo">
+        <strong>Henry Tuttle</strong>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav__list">
+          <li><a href="films.html" class="nav__link">Films</a></li>
+          <li><a href="projects.html" class="nav__link">Projects</a></li>
+          <li><a href="contact.html" class="nav__link nav__link--active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <div class="container">
+      <!-- Page Title -->
+      <div class="page-title">
+        <p class="page-title__subtitle">Get In Touch</p>
+        <h1>Contact</h1>
+      </div>
+
+      <!-- Intro Text -->
+      <div class="u-mb-2xl" style="max-width: 600px; margin-left: auto; margin-right: auto;">
+        <p style="font-size: var(--text-lg); line-height: var(--line-height-relaxed); text-align: center; color: var(--color-muted);">
+          Interested in collaborating on a film, discussing a project, or just want to connect? Reach out through any of the channels below.
+        </p>
+      </div>
+
+      <!-- Contact Links -->
+      <div class="contact-links">
+        <!-- Email -->
+        <a href="mailto:your.email@example.com" class="contact-link">
+          <div>
+            <div class="contact-link__label">Email</div>
+            <div class="contact-link__value">your.email@example.com</div>
+          </div>
+          <div aria-hidden="true">→</div>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <div>
+            <div class="contact-link__label">LinkedIn</div>
+            <div class="contact-link__value">linkedin.com/in/yourprofile</div>
+          </div>
+          <div aria-hidden="true">→</div>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <div>
+            <div class="contact-link__label">GitHub</div>
+            <div class="contact-link__value">github.com/yourusername</div>
+          </div>
+          <div aria-hidden="true">→</div>
+        </a>
+
+        <!-- Resume Download -->
+        <a href="assets/resume.pdf" download="YourName_Resume.pdf" class="contact-link">
+          <div>
+            <div class="contact-link__label">Resume</div>
+            <div class="contact-link__value">Download PDF</div>
+          </div>
+          <div aria-hidden="true">↓</div>
+        </a>
+      </div>
+
+      <!-- Optional: Additional Info -->
+      <div class="u-mt-2xl u-text-center">
+        <p class="mono text-small text-muted">
+          Based in UT • Available for remote collaboration
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="mono text-small text-muted">
+        © <span id="currentYear">2024</span> Henry Tuttle. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+/* Base Typography and Element Styles */
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  cursor: none;
+}
+
+/* ========================================
+   CUSTOM CURSOR
+   ======================================== */
+
+.custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-color: #0a0a0a;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: all 0.1s ease;
+}
+
+.custom-cursor.hover {
+  width: 40px;
+  height: 40px;
+}
+
+/* Show default cursor on interactive elements as fallback */
+a, button, input, textarea, select {
+  cursor: pointer;
+}
+
+/* ========================================
+   TYPOGRAPHY
+   ======================================== */
+
+h1, .h1 {
+  font-size: var(--text-3xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-md);
+}
+
+h2, .h2 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-md);
+}
+
+h3, .h3 {
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-sm);
+}
+
+h4, .h4 {
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-sm);
+}
+
+p {
+  margin-bottom: var(--space-md);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* Monospace text for labels and metadata */
+.mono {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+}
+
+/* Small text */
+small,
+.text-small {
+  font-size: var(--text-sm);
+}
+
+/* Extra small text */
+.text-xs {
+  font-size: var(--text-xs);
+}
+
+/* Muted text */
+.text-muted {
+  color: var(--color-muted);
+}
+
+/* Bold text */
+strong,
+b {
+  font-weight: var(--font-weight-bold);
+}
+
+/* ========================================
+   LINKS
+   ======================================== */
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+  position: relative;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+/* Underline link style */
+a.link-underline {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a.link-underline:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* External link indicator */
+a[target="_blank"]::after {
+  content: " ↗";
+  font-size: 0.8em;
+}
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+
+.btn {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-lg);
+  border: var(--border-width) solid var(--color-border);
+  background: transparent;
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn:hover {
+  background: var(--color-text);
+  color: var(--color-bg);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+/* Button variants */
+.btn--primary {
+  background: var(--color-text);
+  color: var(--color-bg);
+}
+
+.btn--primary:hover {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+/* ========================================
+   HORIZONTAL RULE
+   ======================================== */
+
+hr {
+  border: none;
+  border-top: var(--border-width) solid var(--color-border);
+  margin: var(--space-xl) 0;
+}
+
+/* ========================================
+   IMAGES
+   ======================================== */
+
+img {
+  border: var(--border-width) solid var(--color-border);
+}
+
+/* ========================================
+   RESPONSIVE TYPOGRAPHY
+   ======================================== */
+
+@media (min-width: 768px) {
+  h1, .h1 {
+    font-size: 4rem; /* 64px */
+  }
+
+  h2, .h2 {
+    font-size: var(--text-3xl);
+  }
+}
+
+@media (min-width: 1024px) {
+  h1, .h1 {
+    font-size: 5rem; /* 80px */
+  }
+
+  body {
+    font-size: 1.125rem; /* 18px */
+  }
+}
+
+/* ========================================
+   SELECTION
+   ======================================== */
+
+::selection {
+  background: var(--color-text);
+  color: var(--color-bg);
+}
