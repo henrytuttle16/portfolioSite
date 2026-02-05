@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Websites built by Henry Tuttle for friends and clients">
+  <title>Websites</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/utilities.css">
+</head>
+<body>
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="header__container">
+      <a href="index.html" class="header__logo">
+        <strong>HT</strong>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav__list">
+          <li><a href="projects.html" class="nav__link">Projects</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <div class="container">
+      <!-- Page Title -->
+      <div class="page-title">
+        <h1>Websites</h1>
+        <p class="page-title__subtitle">Developer — 2026</p>
+      </div>
+
+      <!-- Website List -->
+      <div class="website-grid">
+        <!-- Website 1 -->
+        <article class="website-card">
+          <div class="website-card__preview">
+            <img src="assets/images/woodworks_site.jpg" alt="Tree Streets Woodworks website preview">
+          </div>
+          <h2 class="website-card__title">Tree Streets Woodworks</h2>
+          <p class="website-card__description">
+            A site for a local woodworker (my brother!) to share and sell their work.
+          </p>
+          <a href="https://treestreetswoodworks.netlify.app/" class="website-card__link" target="_blank" rel="noopener noreferrer">Visit Site</a>
+        </article>
+
+        <!-- Website 2 -->
+        <article class="website-card">
+          <div class="website-card__preview">
+            <span class="website-card__placeholder">Preview</span>
+          </div>
+          <h2 class="website-card__title">Website Two</h2>
+          <p class="website-card__description">
+            A website built for a friend to advertise their business.
+          </p>
+          <a href="https://999gallery.netlify.app/" class="website-card__link" target="_blank" rel="noopener noreferrer">Visit Site</a>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="mono text-small text-muted">
+        &copy; <span id="currentYear">2024</span> Henry Tuttle
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
+</body>
+</html>
