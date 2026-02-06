@@ -5,10 +5,10 @@
      ======================================== */
 
   /* Base Colors */
-  --color-bg: #ffffff;
-  --color-text: #0a0a0a;
-  --color-border: #0a0a0a;
-  --color-muted: #666666;
+  --color-bg: #eff1ed;
+  --color-text: #766153;
+  --color-border: #766153;
+  --color-muted: #717744;
 
   /* Accent */
   --color-accent: #ff0000;
