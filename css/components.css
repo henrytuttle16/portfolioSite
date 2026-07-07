@@ -610,11 +610,25 @@ a.film-card__thumbnail {
 }
 
 .website-card__placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--font-mono);
-  font-size: var(--text-sm);
-  color: var(--color-muted);
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-bold);
+  color: #eff1ed;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  background: repeating-linear-gradient(
+    -45deg,
+    #766153 0px,
+    #766153 14px,
+    #5c4539 14px,
+    #5c4539 28px
+  );
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .website-card__title {
