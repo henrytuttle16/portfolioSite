@@ -15,6 +15,25 @@
   max-width: 600px;
 }
 
+/* The "Film Enthusiast" line and the CTA button are flex siblings on the same
+   row, so the browser centers them on each other automatically — no manual
+   offset math required. */
+.hero-layout__tagline-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+}
+
+/* The default .btn padding makes it taller than the text line beside it,
+   which pushes "Film Enthusiast" down within the row and reads as an uneven
+   gap above it. Trim the button's vertical padding so its box height is
+   close to the text line's, so centering the two doesn't add visible space. */
+.hero-layout__tagline-cta .btn {
+  padding-top: var(--space-xs);
+  padding-bottom: var(--space-xs);
+}
+
 .hero-layout__photo {
   flex-shrink: 0;
   width: 500px;
@@ -44,6 +63,51 @@
   .hero-layout__text {
     max-width: 100%;
   }
+
+  .hero-layout__tagline-cta {
+    flex-wrap: wrap;
+  }
+
+  .hero-layout__cta {
+    margin-top: var(--space-sm);
+  }
+}
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-lg);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  border: var(--border-width-thick) solid var(--color-text);
+  background: var(--color-text);
+  color: var(--color-bg);
+  transition: background-color var(--transition-base), color var(--transition-base), transform var(--transition-fast);
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn--large {
+  padding: var(--space-md) var(--space-xl);
+  font-size: var(--text-base);
 }
 
 /* ========================================
